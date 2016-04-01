@@ -22,6 +22,9 @@ public class TheMotivator {
 			System.out.println("Well, what can I say?");
 	}
 	
+	public void printScores(int score) {
+		System.out.println("Score::"+score);
+	}
 	public ArrayList<String> getScore(){
 		ArrayList<String> scores  = new ArrayList<String>();
 		System.out.println("Get Individual scores");
