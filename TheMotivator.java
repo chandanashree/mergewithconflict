@@ -18,9 +18,8 @@ public class TheMotivator {
 			System.out.println("Well, what can I say?");
 	}
 	
-	public ArrayList<String> getScore(){
-		ArrayList<String> scores  = new ArrayList<String>();
-		System.out.println("get individual score");
+	public ArrayList<Integer> createScore(){
+		ArrayList<Integer> scores  = new ArrayList<Integer>();
 		scores.add(40);
 		scores.add(50);
 		scores.add(60);
