@@ -1,9 +1,11 @@
+import java.util.ArrayList;
 
 public class TheMotivator {
 	public static void main(String[] args) {
 		System.out.println("Start");
 		TheMotivator tm = new TheMotivator();
 		tm.printMessage(60);
+		System.out.println("Get Scores :");
 	}
 	public void printMessage(int score) {
 		if (score == 100)
@@ -15,4 +17,16 @@ public class TheMotivator {
 		else
 			System.out.println("Well, what can I say?");
 	}
+	
+	public ArrayList<String> getScore(){
+		ArrayList<String> scores  = new ArrayList<String>();
+		System.out.println("get individual score");
+		scores.add(40);
+		scores.add(50);
+		scores.add(60);
+		scores.add(80);
+		System.out.println("print scores"+scores);
+		return scores;
+	}
+	
 }
