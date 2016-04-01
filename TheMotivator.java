@@ -4,8 +4,12 @@ public class TheMotivator {
 	public static void main(String[] args) {
 		System.out.println("Start");
 		TheMotivator tm = new TheMotivator();
-		tm.printMessage(60);
-		System.out.println("Get Scores :");
+		ArrayList<Integer> scores = tm.getScore();
+		System.out.println("Get Scores :"+scores);
+		
+		for(Integer score: scores) {
+			tm.printMessage(score);
+		}		
 	}
 	public void printMessage(int score) {
 		if (score == 100)
@@ -18,13 +22,13 @@ public class TheMotivator {
 			System.out.println("Well, what can I say?");
 	}
 	
-	public ArrayList<Integer> createScore(){
-		ArrayList<Integer> scores  = new ArrayList<Integer>();
-		scores.add(40);
-		scores.add(50);
+	public ArrayList<String> getScore(){
+		ArrayList<String> scores  = new ArrayList<String>();
+		System.out.println("Get Individual scores");
+		scores.add(70);
 		scores.add(60);
-		scores.add(80);
-		System.out.println("print scores"+scores);
+		scores.add(30);
+		scores.add(90);
 		return scores;
 	}
 	
