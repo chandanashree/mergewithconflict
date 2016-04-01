@@ -10,7 +10,15 @@ public class TheMotivator {
 		for(Integer score: scores) {
 			System.out.println("Score::"+score);
 			tm.printMessage(score);
+
 		}		
+	
+		ArrayList<String> students = tm.getStudents();
+		System.out.println("Student List :"+students);
+		
+		for(String student: students) {
+			System.out.println("Student Name :"+student);
+		}
 		System.out.println("End");
 	}
 	public void printMessage(int score) {
@@ -29,8 +37,17 @@ public class TheMotivator {
 	public void printScores(int score) {
 		System.out.println("Score::"+score);
 	}
-	public ArrayList<String> createScore(){
-		ArrayList<String> scores  = new ArrayList<String>();
+
+	public ArrayList<String> getStudents(){
+		ArrayList<String> students  = new ArrayList<String>();
+		students.add("test1");
+		students.add("test2");
+		students.add("test3");
+		students.add("test4");
+		return students;
+	}
+	public ArrayList<Integer> createScore(){
+		ArrayList<Integer> scores  = new ArrayList<Integer>();
 		System.out.println("Get Individual scores");
 		scores.add(70);
 		scores.add(60);
