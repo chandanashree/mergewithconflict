@@ -4,6 +4,7 @@ public class TheMotivator {
 	public static void main(String[] args) {
 		TheMotivator tm = new TheMotivator();
 		tm.printMessage(60);
+		System.out.println("Get Scores :");
 	}
 	public void printMessage(int score) {
 		if (score == 100)
